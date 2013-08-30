@@ -5,16 +5,14 @@ Simple tool to count the frequency of Facebook Likes for a list of users.
 
 Example:
 ```
-$ fb_scraper.py -f user_ids.txt -a '123456789000|abc123abc123_abc123' -t 5 -l DEBUG
+$ fb_scraper.py -f user_ids.txt -a '123456789000|abc123abc123_abc123' -t 1 -l DEBUG
 2013-07-24 11:24:46,642 [fb_scraper] INFO - Found 3 user IDs
 2013-07-24 11:24:47,036 [fb_scraper] DEBUG - (200, u'100012345678', u'{"success":true}')
 2013-07-24 11:24:47,036 [fb_scraper] DEBUG - (200, u'100087654321', u'{"success":true}')
 2013-07-24 11:24:47,036 [fb_scraper] WARNING - (404, u'fake_user_abc123', u'{"error":{"message":"(#803) Some of the aliases you requested do not exist: fake_user_abc123","type":"OAuthException","code":803}}')
-5,9098498615,Adam Sandler
-5,68680511262,NFL
-5,128874350565152,Slotomania - Slot Machines
-5,314467614927,Angry Birds
-5,406433779383,Dwayne The Rock Johnson
+1,9098498615,Adam Sandler
+2,68680511262,NFL
+2,128874350565152,Slotomania - Slot Machines
 ```
 
 Requirements
